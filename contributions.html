@@ -64,7 +64,7 @@
                                   success: function(response) {  
 
                                     var name = (response.name == null) ? response.login : response.name;
-                                    $("#"+response.login).append("<span><a href='"+response.html_url+"'>"+name+"</a></span>");
+                                    $("#"+response.login).append("<span><a href='"+response.html_url+"' target='_blank'>"+name+"</a></span>");
                                   },
                                   error: function(message) {
                                     console.log(message);
