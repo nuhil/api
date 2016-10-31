@@ -15,7 +15,7 @@
     
     ul li {
       list-style: none;
-      padding: 4px;
+      margin-bottom: 5px;
     }
     
   </style> 
@@ -48,7 +48,7 @@
                   type: "GET",           
                   cache: false,
                   success: function(response) {   
-                      for(var i = 0; i < response.length; i++) {
+                      for(var i = 0; i < 4; i++) {
                           var obj = response[i];
                           if (obj.login != "howtocode-com-bd" && (obj.login != "gitter-badger")) {
                               
